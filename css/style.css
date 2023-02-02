@@ -110,7 +110,6 @@ nav ul button:hover {
 }
 
 .content .header-block {
-    border: 10px solid red;
     max-width: 1000px;
     min-width: 300px;
     height: 450px;
@@ -133,12 +132,21 @@ nav ul button:hover {
 .header-block .text {
     position: absolute;
     bottom: 30%;
-    left: 15%;
-    transform: translateX(-20px);
+    left: 8%;
+    
 }
 
 .header-block .text h2 {
     color: white;
     margin-bottom: 20px;
     text-align: right;
+    transform: translateX(-20px);
+    transition: 2s;
+}
+.header-block .text p {
+    color: white;
+    max-width: 280px;
+    text-align: right;
+    transform: translateX(-20px);
+    transition: 2s;
 }
