@@ -41,6 +41,7 @@ body {
     overflow-x: hidden;
 }
 
+/* Header Style */
 header {
     width: 100%;
     height: 500px;
@@ -104,9 +105,9 @@ nav ul button {
 }
 
 nav ul button:hover {
-    transition: 0.8s;
     color: white;
     background: var(--blue);
+    transition: 1s ease;
 }
 
 .content .header-block {
@@ -133,7 +134,7 @@ nav ul button:hover {
     position: absolute;
     bottom: 30%;
     left: 8%;
-    
+
 }
 
 .header-block .text h2 {
@@ -143,10 +144,118 @@ nav ul button:hover {
     transform: translateX(-20px);
     transition: 2s;
 }
+
 .header-block .text p {
     color: white;
     max-width: 280px;
     text-align: right;
     transform: translateX(-20px);
     transition: 2s;
+}
+
+/* Section Style */
+/* Product Catalog */
+section .catalog {
+    width: 100vw;
+    padding: 100px;
+}
+
+section .filter-card {
+    width: 980px;
+    height: 150px;
+    background-color: var(--gray);
+    border-radius: 8px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-input {
+    width: 700px;
+    height: 50px;
+    border: none;
+    border-radius: 4px 0px 0px 4px;
+    text-indent: 10px;
+}
+
+.search-button {
+    width: 150px;
+    height: 50px;
+    border-radius: 4px 0;
+    border: none;
+    background-color: var(--blue);
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.2s ease;
+}
+
+.search-button:hover {
+    background: #dedede;
+    color: var(--blue);
+}
+
+.title-wrapper-catalog {
+    margin-top: 200px;
+    padding-bottom: 20px;
+}
+
+section .card-wrapper {
+    max-width: 1000px;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    grid-gap: 30px;
+    padding-top: 50px;
+}
+
+section .card-item {
+    height: 400px;
+    background: var(--gray);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.card-content {
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card-item img {
+    width: 85%;
+}
+
+.card-item h4 {
+    width: 40%;
+}
+
+.card-item p {
+    width: 90%;
+    font-style: italic;
+    color: #000007;
+}
+
+.card-item button {
+    width: 90%;
+    padding: 15px 0;
+    border: none;
+    background: var(--blue);
+    color: white;
+    font-weight: 700;
+    transition: 1s ease;
+}
+
+.card-item button:hover {
+    background: white;
+    color: var(--blue);
+
 }
