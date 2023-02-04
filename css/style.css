@@ -414,7 +414,7 @@ footer .main {
 }
 
 .main .footer-social img {
-    width: 30px;
+    width: 25px;
     margin: 12px;
     align-items: center;
     justify-content: center;
@@ -498,7 +498,7 @@ footer .last {
         height: 100%;
     }
 
-    
+
 
 }
 
@@ -545,7 +545,7 @@ footer .last {
     }
 
     .main .footer-social img {
-        width: 15px;
+        width: 25px;
     }
 
     .left {
@@ -561,5 +561,15 @@ footer .last {
         margin: 0px;
         text-align: left;
     }
+
+    footer .main {
+        height: 185%;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        padding-left: 10%;
+    }
+
 
 }
